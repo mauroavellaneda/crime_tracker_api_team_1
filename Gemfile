@@ -8,7 +8,6 @@ gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 
 group :development, :test do
-  gem 'capybara'
   gem 'factory_bot_rails'
   gem 'pry-rails'
   gem 'rspec-rails'
