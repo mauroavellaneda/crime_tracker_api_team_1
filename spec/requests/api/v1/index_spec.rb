@@ -11,8 +11,8 @@ RSpec.describe Api::V1::ReportsController, type: :request do
       expect(response_json['crime_reports'].count).to eq 10
     end
 
-    it 'is expected to return specific crime report' do
-      expect(response_json['crime_reports'].third['title_type']).to eq 'Inbrott'
+    it 'is expected to return specific crime report teasors' do
+      expect(response_json['crime_reports'].third['description']).to eq 'Inbrott i företagslokaler på Odenskogs industriområde.'
     end
   end
 end
