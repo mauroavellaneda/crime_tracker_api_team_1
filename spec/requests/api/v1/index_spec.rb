@@ -12,7 +12,7 @@ RSpec.describe Api::V1::ReportsController, type: :request do
     end
 
     it 'is expected to return specific crime report' do
-      expect(response_json['crime_reports'].first['title_type']).to eq 'Inbrott'
+      expect(response_json['crime_reports'].third['title_type']).to eq 'Inbrott'
     end
   end
 end
