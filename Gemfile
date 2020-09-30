@@ -6,6 +6,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
+gem 'rest-client'
 
 group :development, :test do
   gem 'factory_bot_rails'
@@ -13,6 +14,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'coveralls', require: false
+  gem 'webmock'
 end
 
 group :development do
