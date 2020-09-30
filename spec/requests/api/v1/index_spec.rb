@@ -4,15 +4,15 @@ RSpec.describe Api::V1::ReportsController, type: :request do
       get '/api/v1/reports'
     end
 
-    it 'is expected to return 201 response status' do
-      expect(response_status).to eq 201
+    it 'is expected to return 200 response status' do
+      expect(response.status).to eq 200
     end
     it 'is expected to return 10 crime repors' do
       expect(response_json['crime_reports'].count).to eq 10
     end
 
     it 'is expected to return specific crime report' do
-      expect(response_json['crime_reports'].second['title_type']).to eq 'Narkotikabrott'
+      expect(response_json['crime_reports'].first['title_type']).to eq 'Inbrott'
     end
   end
 end
