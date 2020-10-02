@@ -26,8 +26,5 @@ RSpec.configure do |config|
   config.before do
     stub_request(:get, "https://brottsplatskartan.se/api/events").
     to_return(status: 200, body: file_fixture('reports_index.json') , headers: {})
-
-    stub_request(:get, "https://brottsplatskartan.se/api/event/14").
-    to_return(status: 200, body: file_fixture('reports_show.json'), headers: {})
   end
 end
