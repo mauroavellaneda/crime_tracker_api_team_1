@@ -15,6 +15,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'coveralls', require: false
   gem 'webmock'
+  gem 'devise_token_auth'
 end
 
 group :development do

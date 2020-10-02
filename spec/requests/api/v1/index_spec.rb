@@ -1,5 +1,5 @@
-RSpec.describe Api::V1::ReportsController, type: :request do
-  describe 'GET /v1/reports' do
+RSpec.describe 'GET /v1/reports', type: :request do
+  describe 'successfully' do
     before do
       get '/api/v1/reports'
     end
@@ -14,10 +14,5 @@ RSpec.describe Api::V1::ReportsController, type: :request do
     it 'is expected to return specific crime report teasers' do
       expect(response_json['crime_reports'].third['description']).to eq 'Inbrott i företagslokaler på Odenskogs industriområde.'
     end
-    it 'is expected to return specific crime report content' do
-      expect(response_json['crime_reports'].third['content']).to eq 'Någon gång mellan eftermiddagen (cirka 17-tiden) på tisdagen och 06:40 i morse utsattes ett företag på Odenskogs industriområde för ett inbrott. Okända gärningspersoner har tagit sig in i lokalerna och tillgripit elektronik. Polisen har varit på plats och utfört en brottsplatsundersökning. En anmälan har upprättats.'
-    end
-
-
   end
 end

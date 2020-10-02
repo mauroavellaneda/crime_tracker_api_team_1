@@ -1,0 +1,21 @@
+{
+  "data": {
+    "id": 14,
+    "description": "En person på Ringvägen visar tecken på att vara påverkad av narkotika och får följa med för provtagning.",
+    "permalink": "http://polisen.se/Stockholms_lan/Aktuellt/Handelser/Halland/2016-10-14-1838-Narkotikabrott-Laholm/",
+    "parsed_date": "2016-10-14 18:38:00",
+    "parsed_title_location": "Laholm",
+    "parsed_content": "Mannen misstänks för ringa narkotikabrott genom eget bruk. \r\nPolisen Halland",
+    "location_lng": "13.0456048",
+    "location_lat": "56.5057557",
+    "parsed_title": "Narkotikabrott",
+    "parsed_teaser": "En person på Ringvägen visar tecken på att vara påverkad av narkotika och får följa med för provtagning.",
+    "location_geometry_type": "APPROXIMATE",
+    "administrative_area_level_1": "Hallands län",
+    "administrative_area_level_2": "Laholm",
+    "viewport_northeast_lat": "56.5194049",
+    "viewport_northeast_lng": "13.0651259",
+    "viewport_southwest_lat": "56.4916209",
+    "viewport_southwest_lng": "13.0074661"
+  }
+}
