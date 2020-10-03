@@ -7,6 +7,7 @@ RSpec.describe "POST '/api/v1/auth'", type: :request do
             params: {
               email: 'example@craftacademy.se',
               password: 'password',
+              password_confirmation: 'password'
             },
             headers: headers
       end
@@ -27,6 +28,7 @@ RSpec.describe "POST '/api/v1/auth'", type: :request do
               params: {
                 email: 'example@craftacademy.se',
                 password: 'password',
+                password_confirmation: 'wrong_password'
               },
               headers: headers
         end
@@ -46,6 +48,7 @@ RSpec.describe "POST '/api/v1/auth'", type: :request do
               params: {
                 email: 'example@craft',
                 password: 'password',
+                password_confirmation: 'password'
               },
               headers: headers
         end
@@ -67,6 +70,7 @@ RSpec.describe "POST '/api/v1/auth'", type: :request do
               params: {
                 email: 'coach@craftacademy.se',
                 password: 'password',
+                password_confirmation: 'password'
               },
               headers: headers
         end
