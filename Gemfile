@@ -7,6 +7,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 gem 'rest-client'
+gem 'rack-cors', require: 'rack/cors'
 
 group :development, :test do
   gem 'factory_bot_rails'
