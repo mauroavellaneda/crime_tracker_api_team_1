@@ -8,6 +8,7 @@ gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 gem 'rest-client'
 gem 'rack-cors', require: 'rack/cors'
+gem 'devise_token_auth'
 
 group :development, :test do
   gem 'factory_bot_rails'
@@ -16,7 +17,6 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'coveralls', require: false
   gem 'webmock'
-  gem 'devise_token_auth'
 end
 
 group :development do
